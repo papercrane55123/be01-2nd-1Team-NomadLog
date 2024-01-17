@@ -77,7 +77,7 @@ NomadLog
 </p>
 
 <h1>Data Definition Language (DDL)</h1>
-'''
+```SQL
 CREATE TABLE `userstbl` (
 	`member_code` INT(11) NOT NULL AUTO_INCREMENT,
 	`member_id` VARCHAR(15) NOT NULL COLLATE 'utf8mb4_general_ci',
@@ -93,7 +93,8 @@ COLLATE='utf8mb4_general_ci'
 ENGINE=InnoDB
 AUTO_INCREMENT=34
 ;
-'''
+```
+
 
 
 <h2>:airplane: 서비스별 주요 기능 소개</h2>
