@@ -77,6 +77,7 @@ NomadLog
 </p>
 
 <h1>Data Definition Language (DDL)</h1>
+
 ```sql
 CREATE TABLE `userstbl` (
 	`member_code` INT(11) NOT NULL AUTO_INCREMENT,
