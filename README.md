@@ -77,7 +77,7 @@ NomadLog
 </p>
 
 <h1>Data Definition Language (DDL)</h1>
-
+* 유저(멤버) 테이블
 ```sql
 CREATE TABLE `userstbl` (
 	`member_code` INT(11) NOT NULL AUTO_INCREMENT,
@@ -110,7 +110,8 @@ CREATE TABLE `bbs` (
 	`country_id` INT(11) NULL DEFAULT '1',
 	PRIMARY KEY (`bbs_id`) USING BTREE,
 	INDEX `country_id` (`country_id`) USING BTREE,
-	CONSTRAINT `country_id` FOREIGN KEY (`country_id`) REFERENCES `countries` (`country_id`) ON UPDATE CASCADE ON DELETE CASCADE
+	CONSTRAINT `country_id` FOREIGN KEY (`country_id`) REFERENCES
+		`countries` (`country_id`) ON UPDATE CASCADE ON DELETE CASCADE
 )
 COLLATE='utf8mb4_general_ci'
 ENGINE=InnoDB
