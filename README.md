@@ -76,6 +76,25 @@ NomadLog
   <img src="https://github.com/beyond-sw-camp/be01-2nd-1Team-NomadLog/assets/148880521/a8aea973-c9d0-4d88-9459-19bab24b7b55">
 </p>
 
+<h1>Data Definition Language (DDL)</h1>
+'''
+CREATE TABLE `userstbl` (
+	`member_code` INT(11) NOT NULL AUTO_INCREMENT,
+	`member_id` VARCHAR(15) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_password` VARCHAR(15) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_name` VARCHAR(10) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_email` VARCHAR(30) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_age` INT(11) NOT NULL,
+	PRIMARY KEY (`member_code`) USING BTREE,
+	UNIQUE INDEX `member_id` (`member_id`) USING BTREE,
+	UNIQUE INDEX `member_email` (`member_email`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=34
+;
+'''
+
 
 <h2>:airplane: 서비스별 주요 기능 소개</h2>
 
