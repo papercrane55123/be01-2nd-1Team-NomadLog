@@ -77,6 +77,24 @@ NomadLog
 </p>
 
 <h1>Data Definition Language (DDL)</h1>
+
+```ruby
+CREATE TABLE `userstbl` (
+	`member_code` INT(11) NOT NULL AUTO_INCREMENT,
+	`member_id` VARCHAR(15) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_password` VARCHAR(15) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_name` VARCHAR(10) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_email` VARCHAR(30) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`member_age` INT(11) NOT NULL,
+	PRIMARY KEY (`member_code`) USING BTREE,
+	UNIQUE INDEX `member_id` (`member_id`) USING BTREE,
+	UNIQUE INDEX `member_email` (`member_email`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=34
+;
+```
 <pre><code>
 CREATE TABLE `userstbl` (
 	`member_code` INT(11) NOT NULL AUTO_INCREMENT,
